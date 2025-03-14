@@ -101,11 +101,6 @@ main
     animation: main-in-animation .35s forwards;
 }
 
-.opening
-{
-    animation: main-out-animation .35s forwards;
-}
-
 /* ====================================================== */
 
 .messages
@@ -229,19 +224,6 @@ main
     to
     {
         margin-top: 0px;
-    }
-}
-
-@keyframes main-out-animation
-{
-    from
-    {
-        margin-top: 0px;
-    }
-
-    to
-    {
-        margin-top: 800px;
     }
 }
 
