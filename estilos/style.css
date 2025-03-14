@@ -14,6 +14,11 @@ body
     background-color: #153243;
 }
 
+body::-webkit-scrollbar
+{
+    display: none;
+}
+
 header
 {
     flex-direction: column;
@@ -35,6 +40,7 @@ header
 {
     width: 50px;
     border-radius: 120px;
+    animation: header-in-animation .75s;
 }
 
 .texts
@@ -43,6 +49,7 @@ header
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    animation: header-in-animation .35s;
 }
 
 .username
@@ -73,6 +80,7 @@ header
     border-radius: 24px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.171);
     cursor: pointer;
+    animation: nav-button-in .25s forwards;
 }
 
 /* ====================================================== */
@@ -86,8 +94,16 @@ main
     justify-content: space-between;
     align-items: center;
 
-    height: 700px;
+    height: 85vh;
     border-radius: 24px 24px 0 0;
+
+    margin-top: 800px;
+    animation: main-in-animation .35s forwards;
+}
+
+.opening
+{
+    animation: main-out-animation .35s forwards;
 }
 
 /* ====================================================== */
@@ -186,6 +202,65 @@ main
 {
     width: 50px;
     font-weight: 100;
+}
+
+/* ====================================================== */
+
+@keyframes header-in-animation
+{
+    from
+    {
+        opacity: 0%;
+    }
+
+    to
+    {
+        opacity: 100%;
+    }
+}
+
+@keyframes main-in-animation
+{
+    from
+    {
+        margin-top: 800px;
+    }
+
+    to
+    {
+        margin-top: 0px;
+    }
+}
+
+@keyframes main-out-animation
+{
+    from
+    {
+        margin-top: 0px;
+    }
+
+    to
+    {
+        margin-top: 800px;
+    }
+}
+
+@keyframes nav-button-in
+{
+    0%
+    {
+        transform: scale(0%);
+    }
+
+    70%
+    {
+        transform: scale(110%);
+    }
+
+    100%
+    {
+        transform: scale(100%);
+    }
 }
     
 

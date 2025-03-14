@@ -23,18 +23,18 @@
         </div>
 
         <nav>
-            <div class="main-button main">
+            <div class="main-button main" id="navb">
                 <p>Principal</p>
             </div>
 
-            <div class="main-button back" id="back-button">
+            <div class="main-button back" id="backbutton">
                 <p>Voltar</p>
             </div>
         </nav>
 
     </header>
 
-    <main>
+    <main id="main">
        
         <div class="infos-top">
             <img src="imagens/foto-mensagem1.jpg" alt="Foto de perfil do remetente">
@@ -53,10 +53,14 @@
 
     <script>
 
-        document.getElementById("back-button").addEventListener("click", function() 
+        document.getElementById("backbutton").addEventListener("click", function() 
         {
-            // window.location.href = "http://127.0.0.1:5500/inbox.html";
-            window.location.href = "http://rodriigold.github.io/inbox.html";
+            main.classList.add('opening');
+            setTimeout(() => {
+                // window.location.href = "http://127.0.0.1:5500/inbox.html";
+                window.location.href = "http://rodriigold.github.io/maria-mail/inbox.html";
+                main.classList.remove('opening');
+            }, 350);
         })
 
     </script>
