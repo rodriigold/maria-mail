@@ -32,7 +32,7 @@
     <main>
         <div class="messages">
 
-            <div class="message">
+            <div class="message" id="msg1" style="border-radius: 24px 24px 0 0;">
                 <img class="m-photo" src="imagens/foto-mensagem3.jpg" alt="Foto de remetente 1">
                 <div class="m-infos">
                     <p class="m-username">Rodrigo Lins</p>
@@ -43,7 +43,9 @@
                 <img class="favorite" src="imagens/favorite-button-empty.png" alt="Botão de favorito">
             </div>
 
-            <div class="message">
+            <div class="line"></div>
+
+            <div class="message" id="msg2">
                 <img class="m-photo" src="imagens/foto-mensagem1.jpg" alt="Foto de remetente 1">
                 <div class="m-infos">
                     <p class="m-username">Rodrigo Lins</p>
@@ -55,7 +57,9 @@
                 <img class="favorite" src="imagens/favorite-button-empty.png" alt="Botão de favorito">
             </div>
 
-            <div class="message">
+            <div class="line"></div>
+
+            <div class="message" id="msg3">
                 <img class="m-photo" src="imagens/foto-mensagem2.jpg" alt="Foto de remetente 1">
                 <div class="m-infos">
                     <p class="m-username">Rodrigo Lins</p>
@@ -66,10 +70,31 @@
             
                 <img class="favorite" src="imagens/favorite-button-empty.png" alt="Botão de favorito">
             </div>
-            
+
+            <div class="line"></div>
+
         </div>
 
         <img class="logo" src="imagens/logo.png" alt="MariaMail Logo">
     </main>
+
+    <script>
+
+        document.getElementById("msg1").addEventListener("click", function() 
+        {
+            window.location.href = "http://127.0.0.1:5500/msg1.html";
+        })
+
+        document.getElementById("msg2").addEventListener("click", function() 
+        {
+            window.location.href = "http://127.0.0.1:5500/msg2.html";
+        })
+
+        document.getElementById("msg3").addEventListener("click", function() 
+        {
+            window.location.href = "http://127.0.0.1:5500/msg3.html";
+        })
+
+    </script>
 </body>
 </html>
