@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    width: 100%;
+    background-color: #153243;
+}
+
+header
+{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+}
+
+.topinfos
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.topinfos > img
+{
+    width: 50px;
+    border-radius: 120px;
+}
+
+.texts
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.username
+{
+    color: #FFF8F0;
+    font-weight: bold;
+    font-size: .85em;
+}
+
+.email
+{
+    color: #fff8f093;
+    font-weight: lighter;
+    text-align: center;
+    font-size: .55em;
+}
+
+.main-button
+{
+    background-color: #FFF8F0;
+    color: #153243;
+    text-align: center;
+    font-weight: bold;
+    font-size: .8em;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 24px;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.171);
+}
+
+main
+{
+    background-color: #FFF8F0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 700px;
+    border-radius: 24px 24px 0 0;
+}
+
+.messages
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.message
+{
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #153243;
+}
+
+.message p
+{
+    text-align: left;
+}
+
+.m-photo
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.m-infos
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5px;
+}
+
+.m-username
+{
+    color: #153243;
+    font-weight: 800;
+    font-size: .8em;
+}
+
+.m-title
+{
+    color: #153243;
+    font-weight: 800;
+    font-size: .6em;
+}
+
+.m-preview
+{
+    color: #153243;
+    font-weight: lighter;
+    font-size: .5em;
+}
+
+.favorite
+{
+    width: 30px;
+    height: 30px;
+}
+
+.date
+{
+    position: absolute;
+    display: none;
+}
+
+.logo
+{
+    width: 50px;
+}
+    
+
